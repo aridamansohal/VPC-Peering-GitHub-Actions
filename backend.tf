@@ -1,16 +1,16 @@
 terraform {
 
- backend "s3" {
+  backend "s3" {
 
-   bucket = "tf-state-aridaman-12345"
+    bucket = "tf-state-aridaman-12345"
 
-   key = "vpc-peering/terraform.tfstate"
+    key = "vpc-peering/terraform.tfstate"
 
-   region = "us-east-1"
+    region = "us-east-1"
 
-   dynamodb_table = "terraform-lock"
+    dynamodb_table = "terraform-lock"
 
- }
+  }
 
 }
 
