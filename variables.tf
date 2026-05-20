@@ -13,17 +13,21 @@ variable "secondary_aws_region" {
 variable "primary_cidr_block" {
   description = "The CIDR block for the primary VPC"
   default     = "10.0.0.0/16"
+  type        = string
 }
 
 variable "secondary_cidr_block" {
   description = "The CIDR block for the secondary VPC"
   default     = "10.1.0.0/16"
+  type        = string
 }
 
 variable "primary_subnet" {
   default = "10.0.1.0/24"
+  type    = string
 }
 
 variable "secondary_subnet" {
   default = "10.1.1.0/24"
+  type    = string
 }
